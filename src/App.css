@@ -130,6 +130,60 @@ h1 {
     font-size: 36px;
 }
 
+.order-process-container {
+    padding: 40px 50px 70px;
+}
+
+.order-process-catchy-title {
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.order-processes {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-process {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+.order-process-graphic {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 300px;
+}
+
+.order-process-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.order-process-graphic[data-step="1"] {
+    background-image: url("graphics/Order.svg");
+}
+
+.order-process-graphic[data-step="2"] {
+    background-image: url("graphics/Cook.svg");
+}
+
+.order-process-graphic[data-step="3"] {
+    background-image: url("graphics/Deliver.svg");
+}
+
 @media(max-width: 480px) {
     .hero {
         max-width: 334px;
@@ -167,5 +221,11 @@ h1 {
     }
     .secondary-banner-text {
         font-size: 72px;
-    }
+   }
+   .order-processes {
+       flex-direction: row;
+   }
+   .order-process-catchy-title {
+       font-size: 36px;
+   }
 }
