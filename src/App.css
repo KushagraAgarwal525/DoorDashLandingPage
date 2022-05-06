@@ -184,6 +184,102 @@ h1 {
     background-image: url("graphics/Deliver.svg");
 }
 
+.footer {
+    background-color: #222222;
+    color: #c4c4c4;
+    padding: 20px 80px;
+}
+
+.footer-title {
+    color: #e4e4e4;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cities-container, .cuisines-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-cities-container, .top-cuisines-container {
+    display: flex;
+    gap: 20%;
+}
+
+.top-cities-title, .top-cuisines-title {
+    color: #e4e4e4;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.top-cities, .top-cuisines {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.top-city, .top-cuisine {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0ch;
+    text-transform: none;
+    color: #c4c4c4;
+    margin: 0px;
+    padding: 0px;
+    font-variant-ligatures: no-common-ligatures;
+    text-decoration: none;
+    text-align: left;
+    transition: filter 100ms ease;
+}
+
+.top-city:hover, .top-cuisine:hover  {
+    text-decoration: underline;
+    filter: contrast(200%);
+}
+
+.get-app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.get-app-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 8px;
+    border-radius: 8px;
+    border-color: none;
+    background-color: #494949;
+    transition: filter 200ms ease;
+}
+
+.get-app-div svg {
+    fill: #e4e4e4;
+}
+
+.get-app-div:hover {
+    filter: brightness(125%) contrast(125%);
+}
+
+.copyright-text {
+    color: #c4c4c4;
+    margin-top: 40px;
+}
+
 @media(max-width: 480px) {
     .hero {
         max-width: 334px;
@@ -191,6 +287,12 @@ h1 {
     .logo > svg{
         width: 56px;
         height: 32px;
+    }
+    .footer {
+        padding: 20px 40px;
+    }
+    .top-cities-container, .top-cuisines-container {
+        gap: 15%;
     }
 }
 
@@ -228,4 +330,16 @@ h1 {
    .order-process-catchy-title {
        font-size: 36px;
    }
+   .footer {
+        padding: 20px 140px;
+   }
+   .footer-content {
+        flex-direction: row;
+    }
+    .cities-container, .cuisines-container {
+        width: 50%;
+    }
+    .get-app-container {
+        flex-direction: row;
+    }
 }
